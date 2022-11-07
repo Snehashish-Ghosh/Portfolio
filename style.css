@@ -1,0 +1,366 @@
+
+/* Google fonts Family */
+font-family: 'Berkshire Swash', cursive;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Paytone One', sans-serif;
+
+/*Google fonts Url */
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Open+Sans&family=Paytone+One&display=swap');
+
+/* Bsic Css */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+.header-area {
+    font-family: 'Berkshire Swash', cursive;
+    font-weight: bold
+}
+h1 {
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 40px;
+    font-weight: bold;
+}
+h2 {
+    font-family: 'Paytone One', sans-serif; 
+    font-size: 30px;
+}
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    color: FloralWhite;
+}
+
+html {
+    scroll-behavior: smooth;
+
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+    color: rgb(255, 217, 0);
+    background-image: url(img/background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.container {
+    margin-top: 50px;
+    padding: 0 10%;
+}
+.heading-area {
+    margin-top: 200px;
+    text-align: center;
+    background-color: rgb(255, 217, 0);
+    border-radius: 20px;
+    color: black;
+}
+.heading-area h1:hover {
+    color: #ff1499
+}
+.theme-button {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    background-color: rgb(255, 217, 0);
+    color: black;
+    border-radius: 40px;  
+}
+.theme-button:hover {
+    color: #ff1499;
+}
+.theme-button-small {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    background-color: rgb(255, 217, 0);
+    color: black;
+    border-radius: 40px;  
+}
+.theme-button-small:hover {
+    color: #ff1499;
+}
+/* Header area css */
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo-img img {
+    width: 80px;   
+}
+.logo-img::after{
+    content: "Snehashish Ghosh" ;
+    font-size: 45px;
+    color: rgb(255, 217, 0);
+    position: absolute;
+}
+.icon-area img {
+    width: 30px;
+    cursor: pointer;
+}
+.icon-area {
+    display: none;
+    background-color: rgb(255, 217, 0);
+    padding: 10px;
+    border-radius: 20px;
+}
+.menu-area a {
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+    background-color: rgb(255, 217, 0);
+    color: black;
+    margin-left: 15px;
+    border-radius: 10px;  
+    transition: 0.5s;
+}
+.menu-area a:hover {
+    color: #ff1499
+}
+.fixed-area img  {
+    width: 25px;
+    position: fixed;
+    right: 0px;   
+}
+.fixed-area li {
+    margin-bottom: 50px;
+    display: flex;
+}
+/* Hero area css */
+.hero-area {
+    padding: 20px;
+}
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.hero-img img {
+    width: 500px;
+    height: 550px;
+}
+
+.hero-text p {
+    font-family: 'Paytone One', sans-serif;
+    font-size: 25px;
+}
+/* About area css */
+.about-area {
+    padding: 20px;
+}
+.about-content {
+    margin-top: 200px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.about-img img {
+    width: 400px;
+    height: 500px;
+}
+/* Service area css */
+.service-area {
+    padding: 0 10%
+}
+.service-content {
+    padding: 80px 0;
+}
+.service-content {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+}
+.single-service {
+    padding: 30px;
+}
+.single-service h2 {
+    margin-bottom: 10px;
+}
+/* Ask area css */
+.ask-area {
+    padding: 0 10%
+}
+/* Contact area css */
+.contact-area {
+    padding: 100px 0;
+    display: block;
+}
+.contact-content form {
+    display: grid;
+    grid-template-areas:
+    "f l"
+    "e p"
+    "m m"
+    "s s"
+}
+#first-name {
+    grid-area: f;
+}
+#last-name {
+    grid-area: l;
+}
+#email-address {
+    grid-area: e;
+}
+#phone-number {
+    grid-area: p;
+}
+#message {
+    grid-area: m;
+}
+#send-message {
+    grid-area: s;
+    background-color: rgb(255, 217, 0);
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+.contact-content input {
+    font-size: 17px;
+    padding: 12px;
+    background: transparent;
+    color: white
+}
+.contact-content textarea {
+    background: transparent;
+    font-size: 17px;
+    font-family: 'Open Sans', sans-serif;
+    padding: 12px;
+    text-transform: capitalize;
+    color: white
+}
+/* Fotter area css */
+.fotter-area {
+    padding: 25px 0;
+    text-align: center;
+    border-top: 1px solid rgb(255, 217, 0);
+}
+.fotter-area h3 {
+    border-bottom: 3px solid rgb(255, 217, 0);
+    padding: 5px;
+    display: inline-block
+}
+.fotter-area p {
+    color: #ff1499;
+}
+
+
+/* Resposive Css for 1199px */
+@media only screen and (max-width: 1199px) {
+/* Header area css */
+.logo-img::after{
+    content: "Snehashish Ghosh" ;
+    font-size: 35px;
+    color: rgb(255, 217, 0);;
+    position: absolute;
+}
+.menu-area a {
+    text-decoration: none;
+    font-size: 15px;
+    padding: 4px;
+    margin-left: 10px;
+}
+/* hero area cc */
+.hero-content{
+    flex-direction: column; 
+}
+/* About area css */
+.about-content {
+    align-items: center;
+    justify-items: center;
+    grid-template-areas: 
+    "t t t"
+    "i i i"
+    "m m m"
+    ;
+}
+.about-text {
+    grid-area: t;
+}
+.about-img {
+    grid-area: i;
+}
+.about-more {
+    grid-area: m;
+}
+.about-content h1 {
+    text-align: center;
+}
+
+}
+/* Resposive Css for 991px */
+@media only screen and (max-width: 991px) {
+.logo-img::after{
+    content: "Snehashish Ghosh" ;
+    font-size: 25px;
+    color: rgb(255, 217, 0);;
+    position: absolute;
+}
+.menu-area a {
+    text-decoration: none;
+    font-size: 15px;
+    padding: 4px;
+    margin-left: 5px;
+}
+.logo-img::after{
+    margin-top: 15px;
+}
+
+}
+/* Resposive Css for 575px */
+@media only screen and (max-width: 575px) {
+/* Header area css */
+.header-content {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas: 
+    "l l l i"
+    "0 m m m"
+    ;
+    }
+.logo-img {
+    grid-area: l;
+}
+.icon-area {
+    grid-area: i;
+}
+.menu-area {
+    grid-area: m;
+    text-align: center;
+    display: none;
+}
+.show-menu {
+    display: block;
+}
+.icon-area {
+    display: inherit;
+} 
+.menu-area a {
+    display: block;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 30px;
+}
+/* Service area Css */
+.service-content {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+
+/* Contact area CSS */
+.contact-content form {
+    display: grid;
+    grid-template-areas:
+    "f f"
+    "l l"
+    "e e"
+    "p p"
+    "m m"
+    "s s"
+}
+/* All Css Done */
